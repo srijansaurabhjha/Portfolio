@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+.contact::-webkit-scrollbar {
+  display: none;
+}
+
+.contact_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  flex-direction: column;
+  /* border: 2px solid gray; */
+  box-shadow: 2px 2px 2px 2px lightgray, -2px 2px 2px 2px lightgray;
+  width: 70vw;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_box > p {
+  font-size: 50px;
+  font-weight: bolder;
+  color: lightgray;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: "Roboto Mono", monospace;
+}
+
+.contact_form > .input_container > input {
+  width: 60vw;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 5px 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact_form > textarea {
+  resize: none;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 5px 10px;
+  border: 1px solid grey;
+}
+
+.input_container {
+  width: 100%;
+}
+
+.input_container > .MuiSvgIcon-root {
+  position: absolute;
+  font-size: 20px;
+  color: gray;
+  margin-left: 5px;
+  margin-top: 7.5px;
+}

@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  background-color: #1967d3;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 70px;
+  margin-bottom: 0;
+}
+
+.header_left {
+  display: flex;
+}
+
+.header_right {
+  display: flex;
+  margin-left: auto;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.avatar_dropdown {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 60px;
+  box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  display: none;
+  top: 65px;
+  /* margin-top: 50px; */
+}
+
+.avatar_dropdown > p {
+  padding: 5px 8px;
+}
+
+.avatar_dropdown > p:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown:hover .avatar_dropdown {
+  display: flex;
+  flex-direction: column;
+}
