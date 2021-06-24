@@ -1,7 +1,9 @@
-.blog2 {
-  height: 100vh;
+.diffblog {
+  /* height: 100vh; */
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.Large {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }

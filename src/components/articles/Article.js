@@ -12,7 +12,7 @@ const Article = () => {
       <div className="article_head">
         <h2>Featured Articles</h2>
         <form method="get">
-          <input type="text" placeholder="Search blog" />
+          <input type="text" name="query" placeholder="Search blog" />
           <Button
             style={{
               backgroundColor: "gray",
@@ -33,7 +33,9 @@ const Article = () => {
         <div className="article_card_contentDemo">
           <h3>
             <NavLink
-              to="/blog1"
+              to={{
+                pathname: "/blog1"
+              }}
               style={{ color: "black", fontFamily: "'Raleway',sans-serif" }}
             >
               How Web-D has changed the world

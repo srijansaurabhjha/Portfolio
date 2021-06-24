@@ -1,4 +1,78 @@
-.blog1 {
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&family=Ubuntu:wght@700&display=swap");
+.diffblog {
+  /* height: 100vh; */
   width: 100%;
+}
+
+.diffblog_postImg {
+  height: 340px;
+  overflow: hidden;
+  display: flex;
+}
+.diffblog_postImg > img {
+  width: 70%;
+  opacity: 0.9;
+  margin: auto;
+}
+
+.diffblog_heading {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: center;
+}
+
+.diffblog_heading > h1 {
+  /* border: 1px solid green; */
+  margin: 20px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.diffblog_content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+.diffblog_content > p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.partition {
+  width: 70%;
+  margin: auto;
+}
+.partition > hr {
+  height: 2px;
+  background-color: gray;
+}
+
+.diffblog_otherArticles_heading {
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+.diffblog_otherArticles_heading > p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.diffblog_otherArticles_card {
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+.diffblog_otherArticles_card > img {
+  width: 200px;
+  margin: 10px 0;
+}
+
+.diffblog_otherArticles_card_democontent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: center;
+  padding-bottom: 25px;
 }

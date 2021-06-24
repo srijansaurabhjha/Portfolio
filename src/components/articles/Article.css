@@ -49,6 +49,7 @@
     1px 1px 0 #000;
 }
 .article_card {
+  /* border: 1px solid green; */
   display: flex;
   margin: 25px;
 }

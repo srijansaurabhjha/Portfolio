@@ -26,6 +26,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 1;
 }
 
 .blog_left > h1 {
