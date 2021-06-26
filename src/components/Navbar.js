@@ -3,7 +3,11 @@ import "./Navbar.css";
 import { MenuItem, Avatar } from "@material-ui/core";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import { NavLink } from "react-router-dom";
-const Navbar = () => {
+import { auth } from "../firebase.js";
+const Navbar = (props) => {
+  const SignOut = () => {
+    auth.signOut();
+  };
   return (
     <div className="navbar">
       <div className="header_left">
@@ -32,7 +36,10 @@ const Navbar = () => {
             Blog
           </MenuItem>
         </NavLink>
-        <NavLink to="contact" style={{ display: "flex", alignItems: "center" }}>
+        <NavLink
+          to="/contact"
+          style={{ display: "flex", alignItems: "center" }}
+        >
           <MenuItem
             style={{
               color: "whitesmoke",
@@ -45,12 +52,16 @@ const Navbar = () => {
       </div>
       <div className="dropdown">
         <MenuItem style={{ display: "flex", alignItems: "center" }}>
-          <Avatar />
+          <Avatar src={props.avatar} />
         </MenuItem>
         <div className="avatar_dropdown">
-          <p>profile</p>
+          <p>
+            <NavLink style={{ color: "black" }} to="/profile">
+              profile
+            </NavLink>
+          </p>
           <p>Setting</p>
-          <p>Log Out</p>
+          <p onClick={SignOut}>Log Out</p>
         </div>
       </div>
     </div>

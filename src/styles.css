@@ -7,3 +7,31 @@
 .App::-webkit-scrollbar {
   display: none;
 }
+
+.signIn {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+.signIn_img {
+  height: 300px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+
+.signIn > button {
+  background-color: rgba(128, 128, 128, 0.856);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 80px;
+  height: 35px;
+  margin: auto;
+  margin-top: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  /* margin-right: 420px; */
+}
